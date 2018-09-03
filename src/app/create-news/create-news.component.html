@@ -2,10 +2,26 @@
 <div class="container-fluid">
 	<h1 class="text-muted text-center">Create News</h1>
 </div>
-<div class="text-justify" style="font-weight: bold;">
-	Title
-	<input type="text" name="" class="form-control col-md-6 text-muted">Body
-	<input type="text" name="" class="form-control col-md-6">Url
-	<input type="text" name="" class="form-control col-md-6">
-	<button class="btn btn-lg btn-success"><b><i class="material-icons md-46">add_circle_outline</i></b> Create</button>
+<div class="row col-md-12">
+	<div class="col-md-2"></div>
+	<div class="col-md-8">
+		<form>
+			<fieldset>
+				<div class="form-group">
+					<label for="title" autofocus>Title</label>
+					<input type="text" name="title" class="form-control" placeholder="Enter title" [(ngModel)]="title">
+				</div>
+				<div class="form-group">
+					<label for="body">Body</label>
+					<textarea name="body" class="form-control" id="body" [(ngModel)]="body"></textarea>
+				</div>
+				<div class="form-group">
+					<label for="url">Url</label>
+					<input name="url" type="text" class="form-control" id="url" [(ngModel)]="url" placeholder="Enter full url path">
+				</div>
+				<button (click)="savePost()" type="submit" class="btn btn-primary">Register Post</button>
+			</fieldset>
+		</form>
+	</div>
+	<div class="col-md-2"></div>
 </div>

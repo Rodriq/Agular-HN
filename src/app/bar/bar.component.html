@@ -1,19 +1,38 @@
-<div class="row">
-	<div class="col-md-12">
-		<nav>
-			<ul>
-				<a routerLink="news">
-					<button class="btn btn-block btn-info"><i class="material-icons">library_books</i>
-					News</button>
-				</a>
-				<a routerLink="create">
-					<button class="btn btn-primary col-md-6"><i class="material-icons orange600">create</i>Create</button>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		<a class="navbar-brand" href="#">HN</a>
+		<div class="collapse navbar-collapse" id="navbarColor01">
+			<div class="row">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a routerLink="news" class="nav-link"><button class="btn btn-primary"><i class="material-icons">library_books</i> News </button><span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a routerLink="create" class="nav-link"><button class="btn btn-primary col-md-12"><i class="material-icons orange600">create</i> Create</button></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><button class="btn btn-success"><i class="material-icons orange600">select_all</i>Others</button></a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-				</a>
+	</nav>
+	<!-- <div class="row">
+		<div class="col-md-12">
+			<nav>
+				<ul>
+					<a routerLink="news">
+						<button class="btn btn-block btn-info">
+						News</button>
+					</a>
+					<a >
+						<button class="btn btn-primary col-md-6"><i class="material-icons orange600">create</i>Create</button>
 
-				<button class="btn btn-success col-md-6"><i class="material-icons orange600">select_all</i>Others</button>
-			</ul>
-		</nav>
-	</div>
+					</a>
 
-</div>
+					<button class="btn btn-success col-md-6"><i class="material-icons orange600">select_all</i>Others</button>
+				</ul>
+			</nav>
+		</div>
+
+	</div> -->
