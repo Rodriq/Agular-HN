@@ -1,0 +1,23 @@
+<div class="container-fluid">
+	<h1 class="text-muted text-center">Displays news from HN site</h1>
+<hr>
+	<div class="row">
+		<div class="col-md-4" *ngFor="let news of gotten$">
+			<div class="card">
+				<a href="{{news.url}}">
+					<div class="card-header">
+						<p><span class="text-warning">{{gotten$.indexOf(news)+1}}.</span> 
+							&nbsp;<b>{{news.title.substring(0,40)}}..</b></p> 
+						</div>
+					</a>
+					<div class="card-body bg-primary">
+						<p class="card-text">{{news.title.substring(0,70)}}...</p>
+					</div>
+				</div>
+				
+				<br>
+			</div>
+		</div>
+
+	</div>
+

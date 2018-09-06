@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsService } from './../news.service';
+import {Router} from "@angular/router";
 
 @Component({
 	selector: 'app-create-news',
@@ -13,7 +14,7 @@ export class CreateNewsComponent implements OnInit {
 	body: String = "";
 	url: String = "";
 	newNews: Object;
-	constructor(private newsService: NewsService) { }
+	constructor(private newsService: NewsService, private router: Router) { }
 
 	ngOnInit() {
 	}
@@ -23,6 +24,7 @@ export class CreateNewsComponent implements OnInit {
 		//console.log(newNews);
 		this.newsService.createNews(newNews)
 		.subscribe(i => console.log(i));
+		this.router.navigate(['/news']);
 	}
 
 }

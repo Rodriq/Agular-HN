@@ -9,13 +9,15 @@ import { BarComponent } from './bar/bar.component';
 import { CreateNewsComponent } from './create-news/create-news.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { OtherComponent } from './other/other.component';
 
 @NgModule({
   declarations: [
   AppComponent,
   NewsComponent,
   BarComponent,
-  CreateNewsComponent
+  CreateNewsComponent,
+  OtherComponent
   ],
   imports: [
   BrowserModule,
